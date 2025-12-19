@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangerang Selatan - Kota Cerdas & Modern</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h2 { color: #007bff; }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 23%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Kota Tangerang Selatan</h1>
+        <p>Kota Cerdas, Modern, dan Religius</p>
+        <nav>
+            <a href="#profil">Profil</a>
+            <a href="#wisata">Wisata</a>
+            <a href="#kuliner">Kuliner</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Profil -->
+    <section id="profil" class="container">
+        <h2>Profil Daerah</h2>
+        <p>
+            Tangerang Selatan (Tangsel) merupakan kota yang terletak di Provinsi Banten, Indonesia.
+            Kota ini dikenal sebagai salah satu kawasan penyangga ibu kota yang berkembang pesat,
+            dengan pusat pendidikan, bisnis, serta teknologi yang modern.
+        </p>
+    </section>
+
+    <!-- Wisata -->
+    <section id="wisata" class="container">
+        <h2>Destinasi Wisata Populer</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="Tandon-Ciater.webp" alt="Tandon-Ciater">
+                <h3>Tandon-Ciater</h3>
+                <p>Tempat wisata alam yang cocok untuk bersantai dengan keluarga dan menikmati udara segar.</p>
+            </div>
+            <div class="card">
+                <img src="masjid al azhar bsd.jpg" alt="Masjid Al Azhar BSD">
+                <h3>Masjid Al Azhar BSD</h3>
+                <p>Masjid megah dengan arsitektur modern yang menjadi ikon religi di kawasan BSD City.</p>
+            </div>
+            <div class="card">
+                <img src="the breze bsd.jpg" alt="The Breeze BSD">
+                <h3>The Breeze BSD</h3>
+                <p>Pusat hiburan dan kuliner terbuka dengan suasana alami dan desain modern.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuliner -->
+    <section id="kuliner" class="container">
+        <h2>Kuliner Khas Tangsel</h2>
+        <p>
+            Tangsel punya beragam kuliner menarik seperti Soto Tangsel, Nasi Uduk Serpong,
+            dan aneka jajanan khas Betawi. Rasanya autentik dan wajib dicoba!
+        </p>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="container">
+        <h2>Galeri Foto</h2>
+        <div class="gallery">
+            <img src="gedung unpam.jpg" alt="Bundaran BSD">
+            <img src="pamulang.jpg" alt="Pamulang Square">
+            <img src="gedung unpam.jpg" alt="Universitas Pamulang">
+            <img src="pondok aren.jpg" alt="Pondok Aren">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <h3>Kontak & Informasi</h3>
+        <p>Email: info@tangsel.go.id | Telepon: (021) 1234-5678</p>
+        <p>&copy; 2025</p>
+    </footer>
+
+    <!-- Tombol Scroll -->
+    <button id="scrollTopBtn">⬆</button>
+
+    <!-- Script Langsung -->
+    <script>
+        const topBtn = document.getElementById('scrollTopBtn');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topBtn.style.display = 'block';
+            } else {
+                topBtn.style.display = 'none';
+            }
+        };
+        topBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
